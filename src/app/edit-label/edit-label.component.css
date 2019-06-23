@@ -1,0 +1,9 @@
+.example-full-width{width: 100%;}
+.edit-hover{
+  border: 2px solid transparent;
+  padding: 10px;
+  cursor: pointer;
+}
+.edit-hover:hover{
+  border: 2px solid #c4c4c4;
+}

@@ -1,0 +1,21 @@
+.content-result ul li{
+  border-top:2px solid grey;
+  padding: 15px 0;
+}
+.label-title{
+  color: grey;
+  font-size: 24px;
+}
+
+.content-votes{
+  margin-top: 10px;
+}
+.content-votes strong{
+  font-size: 60px;
+  margin-left: 10px;
+  font-weight: lighter;
+}
+.content-votes span{
+  color: #ff4081;
+  font-size: 14px;
+}

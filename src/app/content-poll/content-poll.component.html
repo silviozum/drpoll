@@ -1,0 +1,24 @@
+
+<div class="main">
+  <div class="content-vote" *ngIf="urlParam">
+      <h1>{{dataPoll.title}}</h1>
+    <mat-radio-group aria-label="dataPoll.title"  >
+      <mat-radio-button
+      *ngFor="let item of dataPoll.options; let i = index"
+      [value]="i" (click)="submitItem(item, i)">{{item.label}}</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+    <div class="content-result" *ngIf="!urlParam">
+      <h1>{{dataPoll.message}}</h1>
+      <ul>
+        <li *ngFor="let item of dataPoll.options; let i = index">
+          <span class="label-title">{{item.label}}</span>
+          <div class="content-votes">
+            <span> votes: <strong>{{item.value}}</strong></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+</div>

@@ -1,0 +1,15 @@
+<div class="edit-hover" *ngIf="edit" (click)="editInput()">
+  {{title}}
+</div>
+<form class="example-form" *ngIf="!edit">
+  <mat-form-field class="example-full-width">
+    <input matInput value="{{title}}"
+    [(ngModel)]="newTitle"
+    [ngModelOptions]="{standalone: true}"
+    (keyup.enter)="addTitle()"
+    autofocus
+    required
+    >
+  </mat-form-field>
+
+</form>

@@ -1,0 +1,23 @@
+<h1>
+  Welcome to {{ title }}!
+</h1>
+<div class="main">
+  <div class="content-title">
+    <app-edit-label [title]="dataPoll.title" where="title"></app-edit-label>
+  </div>
+
+  <div class="content-choice-poll">
+    <app-choice-poll></app-choice-poll>
+  </div>
+</div>
+<div class="poll-submit">
+  <button mat-flat-button color="primary" (click)="submitPoll()">Salvar</button>
+</div>
+<div class="after-poll" *ngIf="linkPoll">
+  <div>
+    <a [href]="linkPoll" class="hvr-hover">{{linkPoll}}</a>
+  </div>
+  <div>
+    <a [href]="linkResults" class="hvr-hover">Click Here to see Results!!! \o</a>
+  </div>
+</div>

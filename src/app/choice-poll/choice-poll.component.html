@@ -1,0 +1,27 @@
+<div style="position:relative;">
+  <div *ngFor="let item of dataPoll.options; let i = index" class="poll-options hvr-hover">
+    <button mat-icon-button color="primary" (click)="removeOption(i)">
+      <mat-icon aria-hidden="false" aria-label="remove icon">remove_circle</mat-icon>
+    </button>
+    <app-edit-label [title]="item.label" [where]="i"></app-edit-label>
+  </div>
+
+  <!-- <div class="content-end-message">
+    <span> End Messages:</span>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput ([ngModel])="message" (keyup.enter)="setMessage(message)">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput ([ngModel])="gif" (keyup.enter)="setGifUrl(gif)">
+      </mat-form-field>
+    </form>
+  </div> -->
+
+  <div class="content-add-option">
+    <button  mat-fab color="accent" (click)="addOption()" class="hvr-hover">
+        Add+
+    </button>
+  </div>
+</div>

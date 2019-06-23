@@ -1,0 +1,18 @@
+.poll-options{
+  display: flex;
+  align-items:flex-start;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.content-add-option{
+  text-align: right;
+  padding-left: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.content-end-message{
+  border-top: 2px solid #fff;
+  padding-top: 30px;
+}
